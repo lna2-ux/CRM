@@ -1,0 +1,20 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title">Alphabetized Customers</h1>
+    
+    <div class="buttons mb-5">
+      <%= link_to "All Customers", root_path, class: "button is-primary" %>
+      <%= link_to "Alphabetized", alphabetized_customers_path, class: "button is-info" %>
+      <%= link_to "Missing Email", missing_email_customers_path, class: "button is-warning" %>
+      <%= link_to "Admin Panel", admin_root_path, class: "button is-dark", target: "_blank" %>
+    </div>
+
+    <div class="columns is-multiline">
+      <% @customers.each do |customer| %>
+        <div class="column is-one-third">
+          <%= render customer %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
