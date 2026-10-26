@@ -1,24 +1,39 @@
-# README
+# CRM Application - Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails Customer Relationship Management (CRM) web application built with **Active Admin**, **Bulma CSS**, and **Active Storage**. The application allows public visitors to browse and filter customer directory cards, while providing an authenticated administrative backend to manage customer records, contact notes, and profile image uploads.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 🛠️ Tech Stack & Dependencies
 
-* System dependencies
+* **Ruby Version:** `3.x`
+* **Rails Version:** `7.x`
+* **Database:** SQLite3 / MariaDB
+* **CSS Framework:** Bulma CSS Framework
+* **Admin Interface:** Active Admin (with Devise)
+* **File Storage:** Rails Active Storage (Image Uploads)
 
-* Configuration
+---
 
-* Database creation
+## 🚀 Quick Start & Installation
 
-* Database initialization
+Follow these step-by-step commands to set up, initialize, and run the application locally on your machine.
 
-* How to run the test suite
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/lna2-ux/CRM.git](https://github.com/lna2-ux/CRM.git)
+cd CRM
+bundle install
+bin/rails db:prepare
+bin/rails db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
+bin/rails db:prepare
+bin/rails db:seed
+bin/rails server
 
-* Deployment instructions
+http://localhost:3000
+: http://localhost:3000/admin
 
-* ...
+Email: admin@example.com
+
+Password: password
